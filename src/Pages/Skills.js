@@ -47,7 +47,7 @@ export default function Skills() {
                         ))}
                     </AnimatePresence>
                 </div>
-                <motion.div className='text-6xl mt-36 text-gray-800 name-font font-semibold tracking-wide'>
+                <motion.div className='text-6xl mt-28 text-gray-800 name-font font-semibold tracking-wide'>
                     What I know &rarr;
                 </motion.div>
                 <motion.div className='text-6xl mt-10 text-gray-800 name-font font-medium tracking-wide'>
