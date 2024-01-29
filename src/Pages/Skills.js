@@ -80,6 +80,10 @@ export default function Skills() {
                         <p className='text-2xl text-[#f93700]'>G.</p>
                         <div className='text-5xl'>Python, Java, Rust</div>
                         </div>
+                        <div className="flex items-center gap-4">
+                        <p className='text-2xl'>H.</p>
+                        <div className='text-5xl text-[#f93700]'>Shopify, Canva, Figma</div>
+                        </div>
                         </div>
                 </motion.div>
                 
