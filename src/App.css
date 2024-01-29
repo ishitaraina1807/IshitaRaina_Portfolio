@@ -8,10 +8,11 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
+    background-color: #dbd5c9;
+}
+.home{
     background-image: url('./assets/bg-img.png');
     background-repeat: no-repeat;
-    height: auto;
-    width: max-content;
 }
 .name-font{
     font-family: 'Playfair Display', serif;
@@ -20,3 +21,9 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
 }
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
