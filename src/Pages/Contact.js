@@ -15,7 +15,7 @@ export default function Contact() {
     };
 
     return (
-        <div ref={ref} className='pt-64 bg-[#f2f2f2]'>
+        <div ref={ref} id='contact' className='mt-[300px] pt-[250px] bg-[#f2f2f2]'>
             <motion.div
                 variants={flyUp}
                 initial="hidden"
@@ -27,11 +27,11 @@ export default function Contact() {
               <h1 className='name-font text-8xl text-gray-800'>Let's make something great!</h1>
               <div className="flex items-center gap-20">
                 <p className='text-gray-800 text-3xl basic-font'>Reach me out &rarr;</p>
-                <p className='text-[#f93700] text-6xl name-font underline tracking-wider'>ishitaraina18@gmail.com</p>
+                <a href='mailto:ishitaraina18@gmail.com' className='text-[#f93700] hover:scale-110 duration-300 text-6xl name-font underline tracking-wider'>ishitaraina18@gmail.com</a>
               </div>
               <div className="flex items-center gap-20 text-xl text-gray-800 my-32">
-                <p className=' hover:text-[#f93700] name-font duration-300 hover:cursor-pointer'>Linkedin</p>
-                <p className='hover:text-[#f93700] name-font duration-300 hover:cursor-pointer'>Github</p>
+                <a href='https://www.linkedin.com/in/ishitaraina1807/' target='blank' className=' hover:text-[#f93700] name-font duration-300 hover:cursor-pointer'>Linkedin</a>
+                <a href='https://github.com/ishitaraina1807' target='blank' className='hover:text-[#f93700] name-font duration-300 hover:cursor-pointer'>Github</a>
               </div>
             </motion.div>
         </div>

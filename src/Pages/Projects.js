@@ -4,8 +4,8 @@ import { useInView } from 'react-intersection-observer';
 import projectBW from '../assets/projectBW.png';
 import projectsColored from '../assets/projectsColored.png';
 
-const initialSize = 450;
-const finalSize = 550;
+const initialSize = 550;
+const finalSize = 850;
 
 export default function Projects() {
     const [ref, inView] = useInView({
@@ -38,7 +38,7 @@ export default function Projects() {
     };
 
     return (
-        <div ref={ref} className='bg-[#f2f2f2] flex w-full'>
+        <div ref={ref} id='projects' className='bg-[#f2f2f2] flex w-full'>
             <div
                 className='h-[88vh] flex justify-center items-center bg-white w-[750px] image-container'
                 onMouseEnter={() => setIsHovered(true)}
@@ -73,12 +73,12 @@ export default function Projects() {
                 <div className=' ml-[100px] mt-20'>
                     <h1 className='text-4xl text-gray-800'>Reading Matters</h1>
                     <p className='text-gray-600 my-2'>A BookFinder Website</p>
-                    <a href='/' target='blank' className='text-[#f93700] name-font hover:underline font-bold'>Live Link</a>
+                    <a href='https://searchbooks.vercel.app/' target='blank' className='text-[#f93700] name-font hover:underline font-bold'>Live Link</a>
                 </div>
                 <div className=' ml-[600px] mt-4'>
                     <h1 className='text-4xl text-gray-800'>House Of Ajita</h1>
                     <p className='text-gray-600 my-2'>E-Commerce Website</p>
-                    <a href='/' target='blank' className='text-[#f93700] name-font hover:underline font-bold'>Live Link</a>
+                    <a href='https://houseofajita.com/' target='blank' className='text-[#f93700] name-font hover:underline font-bold'>Live Link</a>
                 </div>
                 <div className=' ml-[100px] mt-4'>
                     <h1 className='text-4xl text-gray-800'>CodinGo</h1>
@@ -88,7 +88,7 @@ export default function Projects() {
                 <div className=' ml-[600px] mt-4 mb-16'>
                     <h1 className='text-4xl text-gray-800'>The NoteBox</h1>
                     <p className='text-gray-600 my-2'>A Notes Manager Website</p>
-                    <a href='/' target='blank' className='text-[#f93700] name-font hover:underline font-bold'>Live Link</a>
+                    <a href='https://notebox-one.vercel.app/' target='blank' className='text-[#f93700] name-font hover:underline font-bold'>Live Link</a>
                 </div>
                 <div className='bg-[#f93700] absolute h-[930px] w-[938px]'>
 

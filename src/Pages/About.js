@@ -15,7 +15,7 @@ export default function About() {
     };
 
     return (
-        <div ref={ref} className='mt-[150px]'>
+        <div ref={ref} id='info' className=''>
             <motion.div
                 variants={flyUp}
                 initial="hidden"
@@ -24,10 +24,10 @@ export default function About() {
                 transition={{ duration: 1, ease: "easeOut" }}
                 className='flex items-center'
             >
-                <div className='w-[760px] pt-48'>
+                <div className='w-[760px] pt-28'>
                     <img src={IR} alt="img" />
                 </div>
-                <div className='ml-[120px] mt-60'>
+                <div className='ml-[120px] mt-32'>
                     <motion.div
                         variants={flyUp}
                         initial='hidden'

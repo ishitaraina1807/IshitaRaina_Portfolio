@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 
 const NavBar = () => {
   const [isSticky, setSticky] = useState(false);
+  const [scrollDirection, setScrollDirection] = useState('down');
 
   const itemVariants = {
     hover: {
@@ -27,8 +29,10 @@ const NavBar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const offset = window.scrollY;
-      if (offset > 0) {
+
+      if (offset > 20) {
         setSticky(true);
+        setScrollDirection(offset > window.scrollY ? 'up' : 'down');
       } else {
         setSticky(false);
       }
@@ -54,21 +58,24 @@ const NavBar = () => {
           className='text-center transform hover:cursor-pointer'
           whileHover="hover"
         >
-          <motion.h1 className='text-4xl basic-font font-medium' variants={itemVariants}>Skills
-          <motion.p
-            className='text-sm mt-4 basic-font '
-            variants={isSticky ? subheadingVariants : {} }
-            initial="hidden"
-            animate="visible"
-          >
-            THAT I DEVELOPED 
+          <ScrollLink to="skills" smooth={true} duration={500}>
+            <motion.h1 className='text-4xl basic-font font-medium' variants={itemVariants}>
+              Skills
+              <motion.p
+                className='text-sm mt-4 basic-font '
+                variants={isSticky && scrollDirection === 'up' ? subheadingVariants : {}}
+                initial="hidden"
+                animate="visible"
+              >
+                THAT I DEVELOPED
           </motion.p></motion.h1>
-         
+          </ScrollLink>
         </motion.div>
         <motion.div
           className='text-center transform hover:cursor-pointer'
           whileHover="hover"
         >
+           <ScrollLink to="projects" smooth={true} duration={500}>
           <motion.h1 className='text-4xl basic-font font-medium' variants={itemVariants}>Projects
           <motion.p
             className='text-sm mt-4 basic-font '
@@ -78,7 +85,7 @@ const NavBar = () => {
           >
             SOME SAMPLES
           </motion.p></motion.h1>
-
+          </ScrollLink>
         </motion.div>
       </div>
 
@@ -87,6 +94,7 @@ const NavBar = () => {
           className='text-center transform hover:cursor-pointer basic-font '
           whileHover="hover"
         >
+           <ScrollLink to="info" smooth={true} duration={500}>
           <motion.h1 className='text-2xl font-medium' variants={itemVariants}>Info
           <motion.p
             className='text-xs mt-4 basic-font '
@@ -96,7 +104,7 @@ const NavBar = () => {
           >
             ABOUT ME
           </motion.p></motion.h1>
-         
+         </ScrollLink>
         </motion.div>
       </div>
 
@@ -105,6 +113,7 @@ const NavBar = () => {
           className='text-center transform hover:cursor-pointer basic-font '
           whileHover="hover"
         >
+           <ScrollLink to="experience" smooth={true} duration={500}>
           <motion.h1 className='text-4xl font-medium' variants={itemVariants}>Experience
           <motion.p
             className='text-sm mt-4 basic-font '
@@ -114,12 +123,13 @@ const NavBar = () => {
           >
             ALL TILL NOW
           </motion.p></motion.h1>
-         
+         </ScrollLink>
         </motion.div>
         <motion.div
           className='text-center transform hover:cursor-pointer basic-font '
           whileHover="hover"
         >
+           <ScrollLink to="contact" smooth={true} duration={500}>
           <motion.h1 className='text-4xl font-medium' variants={itemVariants}>Contact
           <motion.p
             className='text-sm mt-4 basic-font'
@@ -129,7 +139,7 @@ const NavBar = () => {
           >
             FOR ANY QUERY
           </motion.p></motion.h1>
-          
+          </ScrollLink>
         </motion.div>
       </div>
     </motion.div>

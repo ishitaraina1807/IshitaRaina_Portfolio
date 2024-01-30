@@ -19,7 +19,7 @@ export default function Experience() {
     };
 
     return (
-        <div ref={ref}>
+        <div id='experience' ref={ref}> 
             <motion.div
                 variants={containerVariants}
                 initial="hidden"

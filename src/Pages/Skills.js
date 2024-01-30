@@ -15,7 +15,7 @@ export default function Skills() {
     };
 
     return (
-        <div ref={ref} className='bg-[#f2f2f2] py-60 w-full flex flex-col items-center justify-center'>
+        <div ref={ref} id='skills' className='bg-[#f2f2f2] py-60 w-full flex flex-col items-center justify-center'>
             <motion.div
                 variants={flyIn}
                 initial="hidden"
