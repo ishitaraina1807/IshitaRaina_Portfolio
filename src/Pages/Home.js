@@ -10,7 +10,7 @@ const Home = () => {
       <div className="ml-14">
         <AnimatedText text='Raina' font='text-9xl' color='text-[#f93700]'  />
       </div>
-      <div className="mt-4 ml-16">
+      <div className="mt-4 ml-16 basic-font ">
         <AnimatedText text='A full-stack Web Developer' font='text-2xl' color='text-gray-800' />
       </div>
       </div>

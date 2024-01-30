@@ -40,7 +40,7 @@ export default function Projects() {
     return (
         <div ref={ref} className='bg-[#f2f2f2] flex w-full'>
             <div
-                className='h-[83vh] flex justify-center items-center bg-white w-[750px] image-container'
+                className='h-[88vh] flex justify-center items-center bg-white w-[750px] image-container'
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
             >
@@ -71,24 +71,24 @@ export default function Projects() {
             >
                 <p style={{ borderBottom: '4px solid #f93700' }} className='text-md w-44 ml-[330px] text-gray-600'>SELECTED PROJECTS </p>
                 <div className=' ml-[100px] mt-20'>
-                    <h1 className='text-3xl text-gray-800'>Reading Matters</h1>
-                    <p className='text-gray-600 mt-2'>A BookFinder Website</p>
-                    <a href='/' target='blank' className='text-[#f93700] name-font hover:underline'>GitHub Link</a>
+                    <h1 className='text-4xl text-gray-800'>Reading Matters</h1>
+                    <p className='text-gray-600 my-2'>A BookFinder Website</p>
+                    <a href='/' target='blank' className='text-[#f93700] name-font hover:underline font-bold'>Live Link</a>
                 </div>
                 <div className=' ml-[600px] mt-4'>
-                    <h1 className='text-3xl text-gray-800'>House Of Ajita</h1>
-                    <p className='text-gray-600 mt-2'>E-Commerce Website</p>
-                    <a href='/' target='blank' className='text-[#f93700] name-font hover:underline'>Gihub Link</a>
+                    <h1 className='text-4xl text-gray-800'>House Of Ajita</h1>
+                    <p className='text-gray-600 my-2'>E-Commerce Website</p>
+                    <a href='/' target='blank' className='text-[#f93700] name-font hover:underline font-bold'>Live Link</a>
                 </div>
                 <div className=' ml-[100px] mt-4'>
-                    <h1 className='text-3xl text-gray-800'>CodinGo</h1>
-                    <p className='text-gray-600 mt-2'>A Code Editor Website</p>
-                    <a href='/' target='blank' className='text-[#f93700] name-font hover:underline'>Gihub Link</a>
+                    <h1 className='text-4xl text-gray-800'>CodinGo</h1>
+                    <p className='text-gray-600 my-2'>A Code Editor Website</p>
+                    <a href='/' target='blank' className='text-[#f93700] name-font font-bold hover:underline'>Live Link</a>
                 </div>
                 <div className=' ml-[600px] mt-4 mb-16'>
-                    <h1 className='text-3xl text-gray-800'>The NoteBox</h1>
-                    <p className='text-gray-600 mt-2'>A Notes Manager Website</p>
-                    <a href='/' target='blank' className='text-[#f93700] name-font hover:underline'>Gihub Link</a>
+                    <h1 className='text-4xl text-gray-800'>The NoteBox</h1>
+                    <p className='text-gray-600 my-2'>A Notes Manager Website</p>
+                    <a href='/' target='blank' className='text-[#f93700] name-font hover:underline font-bold'>Live Link</a>
                 </div>
                 <div className='bg-[#f93700] absolute h-[930px] w-[938px]'>
 

@@ -38,7 +38,7 @@ export default function Skills() {
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
                                 exit={{ opacity: 0 }}
-                                transition={{ duration: 0.5, delay: index * 0.5 }}
+                                transition={{ duration: 0.5, delay: index * 0.2 }}
                                 style={{ borderBottom: '4px solid #f93700' }}
                                 className='text-6xl text-gray-800 name-font font-medium tracking-wide'
                             >
@@ -50,43 +50,50 @@ export default function Skills() {
                 <motion.div className='text-6xl mt-28 text-gray-800 name-font font-semibold tracking-wide'>
                     What I know &rarr;
                 </motion.div>
-                <motion.div className='text-6xl mt-10 text-gray-800 name-font font-medium tracking-wide'>
+                <motion.div
+                    variants={flyIn}
+                    initial="hidden"
+                    animate={inView ? "visible" : "hidden"}
+                    exit={{ opacity: 0, x: 100 }}
+                    transition={{ duration: 1, ease: "easeOut" }}
+                    className='text-6xl mt-10 text-gray-800 name-font font-medium tracking-wide'
+                >
                     <div className='flex flex-col gap-4 ml-40'>
                         <div className="flex items-center gap-4">
-                        <p className='text-2xl text-[#f93700]'>A.</p>
-                        <div className='text-5xl'>HTML, CSS, JavaScript</div>
+                            <p className='text-2xl text-[#f93700]'>A.</p>
+                            <div className='text-5xl name-font'>HTML, CSS, JavaScript</div>
                         </div>
                         <div className="flex items-center gap-4">
-                        <p className='text-2xl'>B.</p>
-                        <div className='text-5xl text-[#f93700]'>ReactJS, NextJS, Typescript</div>
+                            <p className='text-2xl'>B.</p>
+                            <div className='text-5xl text-[#f93700] name-font'>ReactJS, NextJS, Typescript</div>
                         </div>
                         <div className="flex items-center gap-4">
-                        <p className='text-2xl text-[#f93700]'>C.</p>
-                        <div className='text-5xl'>CSS, TailwindCSS, Framer Motion</div>
+                            <p className='text-2xl text-[#f93700]'>C.</p>
+                            <div className='text-5xl name-font'>CSS, TailwindCSS, Framer Motion</div>
                         </div>
                         <div className="flex items-center gap-4">
-                        <p className='text-2xl'>D.</p>
-                        <div className='text-5xl text-[#f93700]'>MongoDB, ExpressJS, NodeJS</div>
+                            <p className='text-2xl'>D.</p>
+                            <div className='text-5xl text-[#f93700] name-font'>MongoDB, ExpressJS, NodeJS</div>
                         </div>
                         <div className="flex items-center gap-4">
-                        <p className='text-2xl text-[#f93700]'>E.</p>
-                        <div className='text-5xl'>SQL, Restful APIs, Firebase</div>
+                            <p className='text-2xl text-[#f93700]'>E.</p>
+                            <div className='text-5xl name-font'>SQL, Restful APIs, Firebase</div>
                         </div>
                         <div className="flex items-center gap-4">
-                        <p className='text-2xl'>F.</p>
-                        <div className='text-5xl text-[#f93700]'>Git, GitHub, Visual Studio</div>
+                            <p className='text-2xl'>F.</p>
+                            <div className='text-5xl text-[#f93700] name-font'>Git, GitHub, Visual Studio</div>
                         </div>
                         <div className="flex items-center gap-4">
-                        <p className='text-2xl text-[#f93700]'>G.</p>
-                        <div className='text-5xl'>Python, Java, Rust</div>
+                            <p className='text-2xl text-[#f93700]'>G.</p>
+                            <div className='text-5xl name-font'>Python, Java, Rust</div>
                         </div>
                         <div className="flex items-center gap-4">
-                        <p className='text-2xl'>H.</p>
-                        <div className='text-5xl text-[#f93700]'>Shopify, Canva, Figma</div>
+                            <p className='text-2xl'>H.</p>
+                            <div className='text-5xl text-[#f93700] name-font'>Shopify, Canva, Figma</div>
                         </div>
-                        </div>
+                    </div>
                 </motion.div>
-                
+
             </motion.div>
         </div>
     );

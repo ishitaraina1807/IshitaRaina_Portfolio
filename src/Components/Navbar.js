@@ -8,7 +8,6 @@ const NavBar = () => {
     hover: {
       scale: 1.1,
       color: '#f93700',
-      duration: 0.9,
     },
   };
 
@@ -55,10 +54,10 @@ const NavBar = () => {
           className='text-center transform hover:cursor-pointer'
           whileHover="hover"
         >
-          <motion.h1 className='text-4xl' variants={itemVariants}>Skills
+          <motion.h1 className='text-4xl basic-font font-medium' variants={itemVariants}>Skills
           <motion.p
-            className='text-sm mt-4'
-            variants={isSticky ? subheadingVariants : {}}
+            className='text-sm mt-4 basic-font '
+            variants={isSticky ? subheadingVariants : {} }
             initial="hidden"
             animate="visible"
           >
@@ -70,9 +69,9 @@ const NavBar = () => {
           className='text-center transform hover:cursor-pointer'
           whileHover="hover"
         >
-          <motion.h1 className='text-4xl' variants={itemVariants}>Projects
+          <motion.h1 className='text-4xl basic-font font-medium' variants={itemVariants}>Projects
           <motion.p
-            className='text-sm mt-4'
+            className='text-sm mt-4 basic-font '
             variants={isSticky ? subheadingVariants : {}}
             initial="hidden"
             animate="visible"
@@ -85,27 +84,45 @@ const NavBar = () => {
 
       <div className="flex gap-24 text-gray-800">
         <motion.div
-          className='text-center transform hover:cursor-pointer'
+          className='text-center transform hover:cursor-pointer basic-font '
           whileHover="hover"
         >
-          <motion.h1 className='text-4xl' variants={itemVariants}>Experience
+          <motion.h1 className='text-2xl font-medium' variants={itemVariants}>Info
           <motion.p
-            className='text-sm mt-4'
+            className='text-xs mt-4 basic-font '
             variants={isSticky ? subheadingVariants : {}}
             initial="hidden"
             animate="visible"
           >
-            ALL THE PROCESSES
+            ABOUT ME
+          </motion.p></motion.h1>
+         
+        </motion.div>
+      </div>
+
+      <div className="flex gap-24 text-gray-800">
+        <motion.div
+          className='text-center transform hover:cursor-pointer basic-font '
+          whileHover="hover"
+        >
+          <motion.h1 className='text-4xl font-medium' variants={itemVariants}>Experience
+          <motion.p
+            className='text-sm mt-4 basic-font '
+            variants={isSticky ? subheadingVariants : {}}
+            initial="hidden"
+            animate="visible"
+          >
+            ALL TILL NOW
           </motion.p></motion.h1>
          
         </motion.div>
         <motion.div
-          className='text-center transform hover:cursor-pointer'
+          className='text-center transform hover:cursor-pointer basic-font '
           whileHover="hover"
         >
-          <motion.h1 className='text-4xl' variants={itemVariants}>Contact me
+          <motion.h1 className='text-4xl font-medium' variants={itemVariants}>Contact
           <motion.p
-            className='text-sm mt-4'
+            className='text-sm mt-4 basic-font'
             variants={isSticky ? subheadingVariants : {}}
             initial="hidden"
             animate="visible"

@@ -1,92 +1,82 @@
 import React from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import IR from '../assets/IR.png';
 
-export default function Skills() {
-    const skills = ['Frontend', 'Backend', 'Designing'];
+export default function About() {
     const [ref, inView] = useInView({
         triggerOnce: true,
         threshold: 0.5,
     });
 
-    const flyIn = {
-        hidden: { opacity: 0, x: -100 },
-        visible: { opacity: 1, x: 0 },
+    const flyUp = {
+        hidden: { opacity: 0, y: 100 },
+        visible: { opacity: 1, y: 0 },
     };
 
     return (
-        <div ref={ref} className='bg-[#f2f2f2] py-60 w-full flex flex-col items-center justify-center'>
+        <div ref={ref} className='mt-[150px]'>
             <motion.div
-                variants={flyIn}
+                variants={flyUp}
                 initial="hidden"
                 animate={inView ? "visible" : "hidden"}
                 exit={{ opacity: 0, x: 100 }}
                 transition={{ duration: 1, ease: "easeOut" }}
+                className='flex items-center'
             >
-                <motion.div className='text-8xl text-gray-800 name-font font-semibold tracking-wide'>
-                    Let's talk about my &rarr; <i>skills</i>
-                </motion.div>
-                <div className="flex items-center gap-24">
-                    <motion.div className='text-2xl mt-8 w-60 text-gray-800 name-font font-medium tracking-wide'>
-                        *I have a lot of developed skills but I am proficient in these.
-                    </motion.div>
-                    <AnimatePresence>
-                        {skills.map((skill, index) => (
-                            <motion.div
-                                key={index}
-                                whileInView={{ opacity: 1 }}
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                exit={{ opacity: 0 }}
-                                transition={{ duration: 0.5, delay: index * 0.5 }}
-                                style={{ borderBottom: '4px solid #f93700' }}
-                                className='text-6xl text-gray-800 name-font font-medium tracking-wide'
-                            >
-                                {skill}
-                            </motion.div>
-                        ))}
-                    </AnimatePresence>
+                <div className='w-[760px] pt-48'>
+                    <img src={IR} alt="img" />
                 </div>
-                <motion.div className='text-6xl mt-28 text-gray-800 name-font font-semibold tracking-wide'>
-                    What I know &rarr;
-                </motion.div>
-                <motion.div className='text-6xl mt-10 text-gray-800 name-font font-medium tracking-wide'>
-                    <div className='flex flex-col gap-4 ml-40'>
-                        <div className="flex items-center gap-4">
-                        <p className='text-2xl text-[#f93700]'>A.</p>
-                        <div className='text-5xl'>HTML, CSS, JavaScript</div>
-                        </div>
-                        <div className="flex items-center gap-4">
-                        <p className='text-2xl'>B.</p>
-                        <div className='text-5xl text-[#f93700]'>ReactJS, NextJS, Typescript</div>
-                        </div>
-                        <div className="flex items-center gap-4">
-                        <p className='text-2xl text-[#f93700]'>C.</p>
-                        <div className='text-5xl'>CSS, TailwindCSS, Framer Motion</div>
-                        </div>
-                        <div className="flex items-center gap-4">
-                        <p className='text-2xl'>D.</p>
-                        <div className='text-5xl text-[#f93700]'>MongoDB, ExpressJS, NodeJS</div>
-                        </div>
-                        <div className="flex items-center gap-4">
-                        <p className='text-2xl text-[#f93700]'>E.</p>
-                        <div className='text-5xl'>SQL, Restful APIs, Firebase</div>
-                        </div>
-                        <div className="flex items-center gap-4">
-                        <p className='text-2xl'>F.</p>
-                        <div className='text-5xl text-[#f93700]'>Git, GitHub, Visual Studio</div>
-                        </div>
-                        <div className="flex items-center gap-4">
-                        <p className='text-2xl text-[#f93700]'>G.</p>
-                        <div className='text-5xl'>Python, Java, Rust</div>
-                        </div>
-                        <div className="flex items-center gap-4">
-                        <p className='text-2xl'>H.</p>
-                        <div className='text-5xl text-[#f93700]'>Shopify, Canva, Figma</div>
-                        </div>
-                        </div>
-                </motion.div>
-                
+                <div className='ml-[120px] mt-60'>
+                    <motion.div
+                        variants={flyUp}
+                        initial='hidden'
+                        animate={inView ? 'visible' : 'hidden'}
+                        exit={{ opacity: 0, x: 100 }}
+                        transition={{ duration: 2, ease: 'easeOut' }}
+                        className=''
+                    >
+                        <h1 className='text-black text-[14rem] name-font font-extrabold'>I.R.</h1>
+                        <p className='text-5xl name-font font-medium'>a bit about myself</p>
+                    </motion.div>
+                    <motion.div
+                        variants={flyUp}
+                        initial='hidden'
+                        animate={inView ? 'visible' : 'hidden'}
+                        exit={{ opacity: 0, x: 100 }}
+                        transition={{ duration: 2, ease: 'easeOut' }}
+                        className=''
+                    >
+                        <p className='text-3xl basic-font font-medium mt-16'>Just About</p>
+                        <p className='text-lg basic-font'>What I do</p>
+                    </motion.div>
+                    <motion.div
+                        variants={flyUp}
+                        initial='hidden'
+                        animate={inView ? 'visible' : 'hidden'}
+                        exit={{ opacity: 0, x: 100 }}
+                        transition={{ duration: 2, ease: 'easeOut' }}
+                        className=''
+                    >  <p className='text-md basic-font mt-16 font-medium text-gray-800'>I am all about Web Development,</p>
+                        <p className='text-md basic-font font-medium text-gray-800'>Music (I play Ukulele)</p>
+                        <p className='text-md basic-font font-medium text-gray-800'>Art (I paint)</p>
+                        <p className='text-md basic-font font-medium text-gray-800'>for sure!</p>
+                    </motion.div>
+                    <motion.div
+                        variants={flyUp}
+                        initial='hidden'
+                        animate={inView ? 'visible' : 'hidden'}
+                        exit={{ opacity: 0, x: 100 }}
+                        transition={{ duration: 2, ease: 'easeOut' }}
+                        className=''
+                    >
+                        <p className='text-3xl basic-font font-medium mt-16'>So,</p>
+                        <p className='text-md pb-40 text-gray-800 basic-font w-[600px]'>
+                            I'm Ishita — Web Developer with an engineering background. I love everything that has to do with web, art or music. With my decent industry experience, I know how to build a great website at production level. I have worked with a few startups and clients as a freelancer and provide them with the best results.</p>
+                    </motion.div>
+                </div>
+
+
             </motion.div>
         </div>
     );
