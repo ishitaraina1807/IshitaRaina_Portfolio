@@ -42,7 +42,7 @@ export default function Experience() {
                 >
                     <motion.div
                         variants={itemVariants}
-                        className='relative top-[140px] pl-[780px] text-3xl text-[#f9dddd]'
+                        className='relative top-[140px] pl-[780px] text-3xl hover:cursor-pointer text-[#f9dddd]'
                     >
                         {/* Experience 1 */}
                         <div className="flex items-center">
@@ -58,7 +58,7 @@ export default function Experience() {
 
                     <motion.div
                         variants={itemVariants}
-                        className='relative top-[140px] pl-[780px] text-3xl text-[#f9dddd]'
+                        className='relative top-[140px] pl-[780px] text-3xl hover:cursor-pointer text-[#f9dddd]'
                     >
                         {/* Experience 2 */}
                         <div className="flex items-center mt-16">
@@ -74,7 +74,7 @@ export default function Experience() {
 
                     <motion.div
                         variants={itemVariants}
-                        className='relative top-[140px] pl-[780px] text-3xl text-[#f9dddd]'
+                        className='relative top-[140px] pl-[780px] text-3xl hover:cursor-pointer text-[#f9dddd]'
                     >
                         {/* Experience 3 */}
                         <div className="flex items-center mt-16">
@@ -89,7 +89,7 @@ export default function Experience() {
                     </motion.div>
                     <motion.div
                         variants={itemVariants}
-                        className='relative top-[140px] pl-[780px] text-3xl text-[#f9dddd]'
+                        className='relative top-[140px] pl-[780px] text-3xl hover:cursor-pointer text-[#f9dddd]'
                     >
                         {/* Experience 4 */}
                         <div className="flex items-center mt-16">
@@ -104,7 +104,7 @@ export default function Experience() {
                     </motion.div>
                     <motion.div
                         variants={itemVariants}
-                        className='relative top-[140px] pl-[780px] text-3xl text-[#f9dddd]'
+                        className='relative top-[140px] pl-[780px] text-3xl hover:cursor-pointer text-[#f9dddd]'
                     >
                         {/* Experience 5 */}
                         <div className="flex items-center mt-16">
@@ -114,7 +114,7 @@ export default function Experience() {
                                 <p className='text-xs'>Feb 2024 - present</p>
                                 <hr className='w-32 border-t-2 border-[#f9dddd] mx-4' />
                             </div>
-                            <p>Full Stack Developer</p>
+                            <p>Full Stack Developer Intern</p>
                         </div>
                     </motion.div>
                 </motion.div>

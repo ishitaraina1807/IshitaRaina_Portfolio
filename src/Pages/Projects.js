@@ -73,24 +73,24 @@ export default function Projects() {
                 <div className=' ml-[100px] mt-20'>
                     <h1 className='text-3xl text-gray-800'>Reading Matters</h1>
                     <p className='text-gray-600 mt-2'>A BookFinder Website</p>
-                    <a href='/' target='blank' className='text-[#f93700] name-font'>GitHub Link</a>
+                    <a href='/' target='blank' className='text-[#f93700] name-font hover:underline'>GitHub Link</a>
                 </div>
                 <div className=' ml-[600px] mt-4'>
-                    <h1 className='text-3xl text-gray-800'>The NoteBox</h1>
-                    <p className='text-gray-600 mt-2'>A Notes Manager Website</p>
-                    <a href='/' target='blank' className='text-[#f93700] name-font'>Gihub Link</a>
+                    <h1 className='text-3xl text-gray-800'>House Of Ajita</h1>
+                    <p className='text-gray-600 mt-2'>E-Commerce Website</p>
+                    <a href='/' target='blank' className='text-[#f93700] name-font hover:underline'>Gihub Link</a>
                 </div>
                 <div className=' ml-[100px] mt-4'>
                     <h1 className='text-3xl text-gray-800'>CodinGo</h1>
                     <p className='text-gray-600 mt-2'>A Code Editor Website</p>
-                    <a href='/' target='blank' className='text-[#f93700] name-font'>Gihub Link</a>
+                    <a href='/' target='blank' className='text-[#f93700] name-font hover:underline'>Gihub Link</a>
                 </div>
-                <div className=' ml-[600px] my-4 mb-16'>
-                    <h1 className='text-3xl text-gray-800'>Web Quest</h1>
-                    <p className='text-gray-600 mt-2'>A Quiz playing Website</p>
-                    <a href='/' target='blank' className='text-[#f93700] name-font'>Gihub Link</a>
+                <div className=' ml-[600px] mt-4 mb-16'>
+                    <h1 className='text-3xl text-gray-800'>The NoteBox</h1>
+                    <p className='text-gray-600 mt-2'>A Notes Manager Website</p>
+                    <a href='/' target='blank' className='text-[#f93700] name-font hover:underline'>Gihub Link</a>
                 </div>
-                <div className='bg-[#f93700] absolute h-[930px] w-[939px]'>
+                <div className='bg-[#f93700] absolute h-[930px] w-[938px]'>
 
                 </div>
             </motion.div>
