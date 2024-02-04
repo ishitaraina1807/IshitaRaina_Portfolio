@@ -17,11 +17,11 @@ export default function Skills() {
     return (
         <div ref={ref} id='skills' className='bg-[#f2f2f2] py-60 w-full flex flex-col items-center justify-center'>
             <motion.div
-                variants={flyIn}
-                initial="hidden"
-                animate={inView ? "visible" : "hidden"}
-                exit={{ opacity: 0, x: 100 }}
-                transition={{ duration: 1, ease: "easeOut" }}
+               variants={flyIn}
+               initial="hidden"
+               animate={inView ? "visible" : "hidden"}
+               exit={{ opacity: 0, x: 100 }}
+               transition={{ duration: 1, ease: "easeOut" }}
             >
                 <motion.div className='text-8xl text-gray-800 name-font font-semibold tracking-wide'>
                     Let's talk about my &rarr; <i>skills</i>
@@ -33,12 +33,12 @@ export default function Skills() {
                     <AnimatePresence>
                         {skills.map((skill, index) => (
                             <motion.div
-                                key={index}
-                                whileInView={{ opacity: 1 }}
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                exit={{ opacity: 0 }}
-                                transition={{ duration: 0.5, delay: index * 0.2 }}
+                            key={index}
+                            variants={flyIn}
+                initial="hidden"
+                animate={inView ? "visible" : "hidden"}
+                exit={{ opacity: 0, x: 100 }}
+                transition={{ duration: 1, ease: "easeOut" }}
                                 style={{ borderBottom: '4px solid #f93700' }}
                                 className='text-6xl text-gray-800 name-font font-medium tracking-wide'
                             >
@@ -51,11 +51,11 @@ export default function Skills() {
                     What I know &rarr;
                 </motion.div>
                 <motion.div
-                    variants={flyIn}
-                    initial="hidden"
-                    animate={inView ? "visible" : "hidden"}
-                    exit={{ opacity: 0, x: 100 }}
-                    transition={{ duration: 1, ease: "easeOut" }}
+                   variants={flyIn}
+                   initial="hidden"
+                   animate={inView ? "visible" : "hidden"}
+                   exit={{ opacity: 0, x: 100 }}
+                   transition={{ duration: 1, ease: "easeOut" }}
                     className='text-6xl mt-10 text-gray-800 name-font font-medium tracking-wide'
                 >
                     <div className='flex flex-col gap-4 ml-40'>

@@ -1,7 +1,7 @@
 import './App.css';
 import Home from './Pages/Home'
 import Skills from './Pages/Skills'
-import Navbar from './Components/Navbar'
+import Navbar from './components/Navbar'
 import Projects from './Pages/Projects.js'
 import Experience from './Pages/Experience.js';
 import About from './Pages/About.js';

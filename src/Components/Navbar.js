@@ -30,7 +30,7 @@ const NavBar = () => {
     const handleScroll = () => {
       const offset = window.scrollY;
 
-      if (offset > 20) {
+      if (offset > 0) {
         setSticky(true);
         setScrollDirection(offset > window.scrollY ? 'up' : 'down');
       } else {

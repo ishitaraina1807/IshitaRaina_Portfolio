@@ -90,9 +90,7 @@ export default function Projects() {
                     <p className='text-gray-600 my-2'>A Notes Manager Website</p>
                     <a href='https://notebox-one.vercel.app/' target='blank' className='text-[#f93700] name-font hover:underline font-bold'>Live Link</a>
                 </div>
-                <div className='bg-[#f93700] absolute h-[930px] w-[938px]'>
-
-                </div>
+                <div className='bg-[#f93700] absolute h-[816px] w-[798px]'></div>
             </motion.div>
         </div>
     );
