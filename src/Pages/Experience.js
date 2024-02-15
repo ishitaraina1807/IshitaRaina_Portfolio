@@ -44,6 +44,7 @@ export default function Experience() {
                         variants={itemVariants}
                         className='relative top-[120px] pl-[780px] text-xl hover:cursor-pointer text-[#f9dddd]'
                     >
+                         {/* className='bg-[#f93700] absolute h-[816px] w-[798px] */}
                         {/* Experience 1 */}
                         <div className="flex items-center">
                             <p className='mx-4 text-sm'>01.</p>
