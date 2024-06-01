@@ -42,16 +42,16 @@ export default function Experience() {
                 >
                     <motion.div
                         variants={itemVariants}
-                        className='relative top-[120px] pl-[780px] text-xl hover:cursor-pointer text-[#f9dddd]'
+                        className='relative top-[120px] pl-[780px] text-xl hover:cursor-pointer text-[#f93700]'
                     >
                          {/* className='bg-[#f93700] absolute h-[816px] w-[798px] */}
                         {/* Experience 1 */}
-                        <div className="flex items-center">
+                        <div className="flex items-center text-[#f93700]">
                             <p className='mx-4 text-sm'>01.</p>
                             <h1 className=''>GDSC (powered by google)</h1>
                             <div className='text-center'>
                                 <p className='text-xs'>2023 - 2024</p>
-                                <hr className='w-32 border-t-2 border-[#f9dddd] mx-4' />
+                                <hr className='w-32 border-t-2 border-[#f93700] mx-4' />
                             </div>
                             <p>Web Development Lead</p>
                         </div>
@@ -59,7 +59,7 @@ export default function Experience() {
 
                     <motion.div
                         variants={itemVariants}
-                        className='relative top-[120px] pl-[780px] text-xl hover:cursor-pointer text-[#f9dddd]'
+                        className='relative top-[120px] pl-[780px] text-xl hover:cursor-pointer text-[#f93700]'
                     >
                         {/* Experience 2 */}
                         <div className="flex items-center mt-16">
@@ -67,7 +67,7 @@ export default function Experience() {
                             <h1>CodeStam Technologies</h1>
                             <div className='text-center'>
                                 <p className='text-xs'>Oct 2023 - Nov 2023</p>
-                                <hr className='w-32 border-t-2 border-[#f9dddd] mx-4' />
+                                <hr className='w-32 border-t-2 border-[#f93700] mx-4' />
                             </div>
                             <p>Frontend Developer Intern</p>
                         </div>
@@ -75,7 +75,7 @@ export default function Experience() {
 
                     <motion.div
                         variants={itemVariants}
-                        className='relative top-[120px] pl-[780px] text-xl hover:cursor-pointer text-[#f9dddd]'
+                        className='relative top-[120px] pl-[780px] text-xl hover:cursor-pointer text-[#f93700]'
                     >
                         {/* Experience 3 */}
                         <div className="flex items-center mt-16">
@@ -83,37 +83,37 @@ export default function Experience() {
                             <h1>Fiverr</h1>
                             <div className='text-center'>
                                 <p className='text-xs'>Nov 2023 - present</p>
-                                <hr className='w-32 border-t-2 border-[#f9dddd] mx-4' />
+                                <hr className='w-32 border-t-2 border-[#f93700] mx-4' />
                             </div>
                             <p>E-Commerce Developer</p>
                         </div>
                     </motion.div>
                     <motion.div
                         variants={itemVariants}
-                        className='relative top-[120px] pl-[780px] text-xl hover:cursor-pointer text-[#f9dddd]'
+                        className='relative top-[120px] pl-[780px] text-xl hover:cursor-pointer text-[#f93700]'
                     >
                         {/* Experience 4 */}
                         <div className="flex items-center mt-16">
                             <p className='mx-4 text-sm'>04.</p>
-                            <h1>SkillCrunch</h1>
+                            <h1>PingFence</h1>
                             <div className='text-center'>
-                                <p className='text-xs'>Jan 2024 - Feb 2024</p>
-                                <hr className='w-32 border-t-2 border-[#f9dddd] mx-4' />
+                                <p className='text-xs'>Jan 2024 - March 2024</p>
+                                <hr className='w-32 border-t-2 border-[#f93700] mx-4' />
                             </div>
-                            <p>Lead Web Developer</p>
+                            <p>Full Stack Developer Intern</p>
                         </div>
                     </motion.div>
                     <motion.div
                         variants={itemVariants}
-                        className='relative top-[120px] pl-[780px] text-xl hover:cursor-pointer text-[#f9dddd]'
+                        className='relative top-[120px] pl-[780px] text-xl hover:cursor-pointer text-[#f93700]'
                     >
                         {/* Experience 5 */}
                         <div className="flex items-center mt-16">
                             <p className='mx-4 text-sm'>05.</p>
-                            <h1>PingFence</h1>
+                            <h1>Scorora</h1>
                             <div className='text-center'>
-                                <p className='text-xs'>Feb 2024 - present</p>
-                                <hr className='w-32 border-t-2 border-[#f9dddd] mx-4' />
+                                <p className='text-xs'>March 2024 - May 2024</p>
+                                <hr className='w-32 border-t-2 border-[#f93700] mx-4' />
                             </div>
                             <p>Full Stack Developer Intern</p>
                         </div>

@@ -71,9 +71,9 @@ export default function Projects() {
             >
                 <p style={{ borderBottom: '4px solid #f93700' }} className='text-md w-44 ml-[330px] text-gray-600'>SELECTED PROJECTS </p>
                 <div className=' ml-[100px] mt-20'>
-                    <h1 className='text-4xl text-gray-800'>Reading Matters</h1>
-                    <p className='text-gray-600 my-2'>A BookFinder Website</p>
-                    <a href='https://searchbooks.vercel.app/' target='blank' className='text-[#f93700] name-font hover:underline font-bold'>Live Link</a>
+                    <h1 className='text-4xl text-gray-800'>Scorora</h1>
+                    <p className='text-gray-600 my-2'>AI integrated ILETS learning Platform</p>
+                    <a href='https://scorora.com' target='blank' className='text-[#f93700] name-font hover:underline font-bold'>Live Link</a>
                 </div>
                 <div className=' ml-[600px] mt-4'>
                     <h1 className='text-4xl text-gray-800'>House Of Ajita</h1>
